@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd /
-sudo yum update
+sudo yum update -y
 
 # nginx install
 sudo touch /etc/yum.repos.d/nginx.repo
@@ -40,8 +40,8 @@ EOF
 
 # composer install
 cd ~
-sudo curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/local/bin/composer
+# sudo curl -sS https://getcomposer.org/installer | php
+# sudo mv composer.phar /usr/local/bin/composer
 # sudo yum -y install --enablerepo=remi,remi-php72 php-pecl-zip composer
 
 # node(npm) install
